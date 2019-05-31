@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.scss";
 import CharacterList from "./components/CharacterList";
+import PaginationList from './components/Pagination/PaginationList'
 
 class App extends Component {
   constructor() {
@@ -8,7 +9,7 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       currentPage: 1,
-      
+
     };
   }
 
@@ -38,6 +39,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <CharacterList characterList={this.state.starwarsChars} />
+        <PaginationList />
       </div>
     );
   }
