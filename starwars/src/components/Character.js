@@ -8,7 +8,7 @@ const Character = props => {
             onClick={props.eachCharacter.isClicked && !props.eachCharacter.isClicked}
         >
             <h3 className='character-name'>{props.eachCharacter.name}</h3>
-            {/* {props.eachCharacter.isClicked} */}
+            <p>Born {props.eachCharacter.birth_year}</p>
         </div>
     )
 }
