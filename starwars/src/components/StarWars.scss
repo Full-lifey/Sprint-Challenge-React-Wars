@@ -1,0 +1,22 @@
+.character-items{
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .each-character{
+        color: #3c6eab;
+        background: #ffc35a;
+        width: 200px;
+        height: 80px;
+        margin: 15px 15px 0 0;
+        border: 1px solid #3c6eab;
+        line-height: 50px;
+        &:hover{
+            background: #3c6eab;
+            color: #ffc35a;
+            border: 1px solid #ffc35a;
+        }
+    }
+}

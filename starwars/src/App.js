@@ -29,9 +29,9 @@ class App extends Component {
         throw new Error(err);
       });
   };
-
-  render() {
-    console.log(this.state);
+    // console.log(this.getCharacters("https://swapi.co/api/people/?page=2"));
+    
+    render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
